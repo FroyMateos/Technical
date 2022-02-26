@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+
+</head>
+
+
+
+<body>
+<!-- NAVBAR -->
+    <div class="container">
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+    </div>
+<input type="checkbox" id="btn-menu">
+
+<nav id="navbar">
+    
+
+    <div class="container1">
+        <div class="btn-menu">
+            <br>
+            <label for="btn-menu">✖️</label>
+            <header>Python</header>
+        </div>
+    </div>
+
+
+    <ul>
+        <li><a class="nav-link" href="#Introduccion_a_Python">Introduccion a Python</a></li>
+        <li><a class="nav-link" href="#Características">Características</a></li>
+        <li><a class="nav-link" href="#Ventajas_y_desventajas">Ventajas y desventajas</a></li>
+        <li><a class="nav-link" href="#Instalación">Instalación</a></li>
+        <li><a class="nav-link" href="#Tu_primer_programa">Tu primer programa</a></li>
+    </ul>
+</nav>
+
+
+
+<!-- INFO -->
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion_a_Python">
+            <header>Introduccion a Python</header>
+            <p>
+                Python es un lenguaje de programación de propósito general muy poderoso y flexible, a la vez que sencillo y fácil de
+                aprender. Es un lenguaje de alto nivel, que permite procesar fácilmente todo tipo de estructuras de datos, tanto
+                numéricos como de texto.
+            </p>
+            <img src="https://entrenamiento-python-basico.readthedocs.io/es/latest/_images/python_logo.png">
+            <p>
+                Python se desarrolla bajo una licencia de Open source o código abierto aprobada por OSI, por lo que se puede usar y
+                distribuir libremente, incluso para uso comercial.
+            </p>
+            <img src="https://entrenamiento-python-basico.readthedocs.io/es/latest/_images/Open_Source_Initiative.png">
+        </section>
+    
+        <section class="main-section" id="Características">
+            <header>Características</header>
+            <p>
+                Las características del lenguaje de programación Python se resumen a continuación:
+            </p>
+            <ul>
+                <li>Es un lenguaje interpretado, no compilado, usa tipado dinámico, fuertemente tipado.</li>
+                <li>Es multiplataforma, lo cual es ventajoso para hacer ejecutable su código fuente entre varios sistema operativos.</li>
+                <li>Es un lenguaje de programación multiparadigma, el cual soporta varios paradigma de programación como orientación a
+                objetos, estructurada, programación imperativa y, en menor medida, programación funcional.</li>
+                <li>En Python, el formato del código (p. ej., la indentación) es estructural.</li>
+            </ul>
+            <p>
+                Un fuertemente tipado significa que el tipo de valor no cambia repentinamente. Un string que contiene solo dígitos no se
+                convierte mágicamente en un número. Cada cambio de tipo requiere una conversión explícita. A continuación un ejemplo de
+                este concepto:
+            </p>
+            <code>
+                # se usa el metodo int() para convertir a entero<br>
+                total = valor1 + int(valor2) <br>
+                # se usa el metodo str() para convertir a cadena<br>
+                print ("El total es: " + str(total))<br>
+            </code>
+            <p>
+                El tipado dinámico significa que los objetos en tiempo de ejecución (valores) tienen un tipo, a diferencia del tipado
+                estático donde las variables tienen un tipo. A continuación un ejemplo de este concepto:
+            </p>
+            <code>
+                print (variable, type(variable)) <br>
+                # "variable" guarda un valor string<br>
+                variable = "activo"<br>
+                print (variable, type(variable))<br>
+            </code>
+            <p>
+                Python es multiplataforma, lo cual es ventajoso para hacer ejecutable su código fuente entre varios sistema operativos,
+                eso quiere decir, soporta las siguientes plataformas para su ejecución:
+            </p>
+            <ul>
+                <li>Versiones Python para Microsoft Windows (y DOS) (arquitectura x86/x86-64 en presentación de ejecutable, archivo Zip,
+                instalador basado en la Web).</li>
+                <li>Versiones Python para Mac OSX (Macintosh) (arquitectura 32bit/64bit en presentación de instalador ejecutable).</li>
+                <li>Versiones Python en código fuente (archivo tarball del código fuente comprimido con XZ y con Gz). Para las mayoría de
+                los sistemas Linux/UNIX, usted debe descargar y compilar el código fuente.</li>
+                <li>Versiones de Implementaciones Alternativas Python, la versión «tradicional» de Python (tiene nombre código CPython).</li>
+                <li>Versiones de Python en otras plataformas, la versión «tradicional» de Python (tiene nombre código CPython), mas esta
+                versión ha sido migrada a un número plataformas especializadas y/o antiguas, a continuación se destacan algunas de
+                ellas.</li>
+            </ul>
+        </section>
+    
+        <section class="main-section" id="Ventajas_y_desventajas">
+            <header>Ventajas y desventajas</header>
+                <h1>Ventajas</h1>
+                    <h2>Simplificado y rápido</h2>
+            <p>Este lenguaje simplifica mucho la programación «hace que te adaptes a un modo de lenguaje de programación, Python te
+            propone un patrón». Es un gran lenguaje para scripting, si usted requiere algo rápido (en el sentido de la ejecución del
+            lenguaje), con unas cuantas líneas ya está resuelto.
+            </p>
+                    <h2>Elegante y flexible</h2>
+            <p>El lenguaje le da muchas herramientas, si usted quiere listas de varios tipo de datos, no hace falta que declares cada
+            tipo de datos. Es un lenguaje tan flexible usted no se preocupa tanto por los detalles.
+            </p>
+                    <h2>Programación sana y productiva</h2>
+            <p>Programar en Python se convierte en un estilo muy sano de programar: es sencillo de aprender, direccionado a las reglas
+            perfectas, le hace como dependiente de mejorar, cumplir las reglas, el uso de las lineas, de variables». Ademas es un
+            lenguaje que fue hecho con productividad en mente, es decir, Python le hace ser mas productivo, le permite entregar en
+            los tiempos que me requieren.
+            </p>
+                    <h2>Ordenado y limpio</h2>
+            <p>El orden que mantiene Python, es de lo que más le gusta a sus usuarios, es muy legible, cualquier otro programador lo
+            puede leer y trabajar sobre el programa escrito en Python. Los módulos están bien organizados, a diferencia de otros
+            lenguajes.
+            </p>
+                     <h2>Portable</h2>
+            <p>Es un lenguaje muy portable (ya sea en Mac, Linux o Windows) en comparación con otros lenguajes. La filosofía de
+            baterías incluidas, son las librerías que más usted necesita al día a día de programación, ya están dentro del
+            interprete, no tiene la necesidad de instalarlas adicionalmente con en otros lenguajes.
+            </p>
+
+                     <h2>Comunidad</h2>
+            <p>Algo muy importante para el desarrollo de un lenguaje es la comunidad, la misma comunidad de Python cuida el lenguaje y
+            casi todas las actualizaciones se hacen de manera democrática.
+            </p>
+                <h1>Desventajas</h1>
+                     <h2>Curva de aprendizaje</h2>
+            <p>La «curva de aprendizaje cuando ya estás en la parte web no es tan sencilla».
+            </p>
+                     <h2>Hosting</h2>
+            <p>La mayoría de los servidores no tienen soporte a Python, y si lo soportan, la configuración es un poco difícil.
+            </p>
+                     <h2>Librerías incluidas</h2>
+            <p>Algunas librerías que trae por defecto no son del gusto de amplio de la comunidad, y optan a usar librerías de terceros.
+            </p>
+        </section>
+    
+        <section class="main-section" id="Instalación">
+            <header>Instalación</header>
+            <p>Debido al soporte multiplataforma de Python, se ofrecen ciertos recursos para los sistemas operativos más populares:
+            </p>
+                <h1>Instalando Python en Windows</h1>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=VTykmP-a2KY" class="link" target="_blank">Instalando Python en Windows.</a></li>
+                </ul>
+                <h1>Instalando Python en Mac</h1>
+                <ul>
+                    <li><a href="https://es.wikibooks.org/wiki/Python/Instalaci%C3%B3n_de_Python/Python_en_Mac_OS_X" class="link" target="_blank">Instalando Python en una Mac.</a></li>
+                </ul>
+                <h1>Instalando Python en Linux</h1>
+                <p>
+                    En una distribución estándar Linux dispone por defecto el interprete Python instalado, para comprobar la correcta
+                    instalación solamente debería ejecutar el comando en la consola:
+                </p>
+                <code>
+                    python <br>
+                    Python 2.7.13 (default, Sep 26 2018, 18:42:22)<br>
+                    [GCC 6.3.0 20170516] on linux2<br>
+                    Type "help", "copyright", "credits" or "license" for more information.<br>
+                    >>>
+                </code>
+                <p>Si le muestra los mensajes anteriores esta correctamente instalado el interprete Python en su Linux.
+                Si al ejecutar el comando anterior muestra el mensaje:</p>
+                <code>
+                    python <br>
+                    bash: python: no se encontró la orden
+                </code>
+                <p>
+                    Esto es debido a que no tiene instalado el interprete, así que debe ejecutar el siguiente comando:
+                </p>
+                <code>
+                    sudo apt-get install -y python-dev
+                </code>
+                <p>De nuevo vuelva a ejecutar en su consola de comando el comando python.</p>
+        </section>
+    
+        <section class="main-section" id="Tu_primer_programa">
+            <header>Tu primer programa</header>
+            <p>
+                En informática, un programa Hola Mundo es el que imprime el texto «¡Hola, Mundo!» en un dispositivo de visualización, en
+                la mayoría de los casos una pantalla de monitor. Este programa suele ser usado como introducción al estudio de un
+                lenguaje de programación, siendo un primer ejercicio típico, y se lo considera fundamental desde el punto de vista
+                didáctico.
+            </p>
+            <p>
+                El Hola Mundo se caracteriza por su sencillez, especialmente cuando se ejecuta en una interfaz de línea de comandos. En
+                interfaces gráficas la creación de este programa requiere de más pasos.
+            </p>
+            <p>
+                El programa Hola Mundo también puede ser útil como prueba de configuración para asegurar que el compilador, el entorno
+                de desarrollo y el entorno de ejecución estén instalados correctamente y funcionando.<br>
+                Programa ¡Hola, Mundo! en diversas versiones de Python:
+            </p>
+            <code>
+                print "Hola Mundo" # Python 2.x <br>
+                print("Hola Mundo"); # Python 3.x
+                </code>
+        </section>
+    
+    </main>
+</body>
+
+</html>
